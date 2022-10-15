@@ -11,14 +11,16 @@ Google Kubernetes Engine (GKE) deployed in Google Cloud Platform (GCP) using inf
 * Set up GCP:
   * [Create GCP project](https://console.cloud.google.com/cloud-resource-manager)
   * [Enable Google Compute Engine](https://console.developers.google.com/apis/library/compute.googleapis.com)
+  * [Enable Kubernetes Engine API](https://console.cloud.google.com/apis/library/container.googleapis.com)
   * [Create GCP service account key](https://console.cloud.google.com/apis/credentials/serviceaccountkey)
+  * [Grant access as project editor for new service account](https://console.cloud.google.com/iam-admin/iam)
 
 # Infrastructure
 
 After proper configuring account in Google Cloud, whole infrastructure can be provisioned using commands:
 
 ```
-terraform init
+terraform init --upgrade
 
 terraform fmt -recursive
 terraform validate
