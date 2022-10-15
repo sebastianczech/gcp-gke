@@ -43,6 +43,7 @@ gcloud compute --project $GCP_PROJECT_ID images list
 gcloud compute --project $GCP_PROJECT_ID machine-types list
 gcloud compute --project $GCP_PROJECT_ID instances list
 gcloud compute --project $GCP_PROJECT_ID networks list
+gcloud compute --project $GCP_PROJECT_ID instances list
 ```
 
 # Links
